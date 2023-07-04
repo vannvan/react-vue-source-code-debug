@@ -391,6 +391,9 @@ export function renderWithHooks<Props, SecondArg>( //函数组件渲染和更新
   workInProgress.updateQueue = null;
   workInProgress.lanes = NoLanes;
 
+
+  console.error('-------------------------------------new-------------------');
+
   // The following should have already been reset
   // currentHook = null;
   // workInProgressHook = null;

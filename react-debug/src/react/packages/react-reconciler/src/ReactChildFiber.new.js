@@ -1146,6 +1146,7 @@ function ChildReconciler(shouldTrackSideEffects) {
     element: ReactElement,
     lanes: Lanes,
   ): Fiber {
+    debugger
     const key = element.key;
     let child = currentFirstChild;
     while (child !== null) {

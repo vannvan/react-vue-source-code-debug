@@ -142,6 +142,7 @@ if (__DEV__) {
       // 这个才是最终事件触发的函数
       function callCallback() {
         didCall = true;
+        console.warn('事件执行的终点啊哈哈哈哈啊哈哈----------');
         restoreAfterDispatch();
         func.apply(context, funcArgs);
         didError = false;

@@ -390,6 +390,9 @@ export function renderWithHooks<Props, SecondArg>(
   workInProgress.updateQueue = null;
   workInProgress.lanes = NoLanes;
 
+  console.error('-------------------------------------renderWithHooks new-----------------------------------------');
+
+
   // The following should have already been reset
   // currentHook = null;
   // workInProgressHook = null;

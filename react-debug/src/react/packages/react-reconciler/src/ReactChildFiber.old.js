@@ -1263,6 +1263,7 @@ function ChildReconciler(shouldTrackSideEffects) {
     newChild: any,
     lanes: Lanes,
   ): Fiber | null {
+    debugger
     // This function is not recursive.
     // If the top level item is an array, we treat it as a set of children,
     // not as a fragment. Nested arrays on the other hand will be treated as
